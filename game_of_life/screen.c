@@ -1,4 +1,4 @@
-
+#include "screen.h"
 #include <sys/ioctl.h>
 #include <stdio.h>
 
@@ -46,14 +46,4 @@ int Screen_cls(void)
    }
 
    return 1;
-}
-
-int main(void)
-{
-   int x, y;
-   Screen_cls();
-
-   while(1) {
-      usleep(1000);
-   }
 }
